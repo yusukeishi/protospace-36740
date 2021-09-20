@@ -55,7 +55,7 @@ class PrototypesController < ApplicationController
   end
 
   def prototype_edit
-    redirect_to root_path unless user_signed_in? && current_user.id == prototype_url
+    redirect_to root_path unless user_signed_in? && current_user.id 
     
   end
 end
